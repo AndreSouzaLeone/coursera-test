@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width", initial-scale=1">
+	<title>Solution Module 2</title>
+	<style>
+	/*** Base Styles ***/
+		* {
+		box-sizing: border-box;
+		background-color: #ffffff;
+		}
+		h1 {
+		margin-bottom: 15px;
+
+		}
+		h3 {
+			background-color: #A52A2A;
+		}
+
+		div .pgh {
+			border: 1px solid black;
+			background-color: #A52A2A;
+			width: 90%;
+			height:180px;
+			margin-right: auto;
+			margin-left: auto;
+			font-family: Arial;
+			color: white;
+			margin-top: 15px;
+			margin-bottom: 15px;
+		}
+
+		span {
+			font-size: 140%;
+			color: #FFFFFF;
+			background-color: #A52A2A;
+		}
+
+		p {
+			background-color: #A52A2A;
+			margin-top: 0;
+		}
+
+		ul, li {
+			background-color: #A52A2A;
+			font-size: 120%;
+			margin-left: 1px;
+		}
+		/* Simple Responsive Framework. */
+		.row {
+		width: 100%;
+		}
+
+		
+		/*** Large devices only ***/
+		@media(min-width: 1200px) {
+			.col-lg-1, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-10, .col-lg-11, .col-lg-12 {
+			float: left;
+			border: 1px solid green;
+			}
+			.col-lg-1 {
+			width: 8.33%;
+			}
+			.col-lg-2 {
+			width: 16.66%;
+			}
+			.col-lg-3 {
+			width: 25%;
+			}
+			.col-lg-4 {
+			width: 33.33%;
+			}
+			.col-lg-5 {
+			width: 41.66%;
+			}
+			.col-lg-6 {
+			width: 50%;
+			}
+			.col-lg-7 {
+			width: 58.3%;
+			}
+			.col-lg-8 {
+			width: 66.66%;
+			}
+			.col-lg-9 {
+			width: 74.99%;
+			}
+			.col-lg-10 {
+			width: 83.33%;
+			}
+			.col-lg-11 {
+			width: 91.66%;
+			}
+			.col-lg-12 {
+			width: 100%;
+			}
+		
+		}
+
+	/*** Medium devices only ***/
+		@media (min-width: 992px) and (max-width: 1199px) {
+			.col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12 {
+			float: left;
+			border: 1px solid green;
+			}
+			.col-md-1 {
+			width: 8.33%;
+			}
+			.col-md-2 {
+			width: 16.66%;
+			}
+			.col-md-3 {
+			width: 25%;
+			}
+			.col-md-4 {
+			width: 33.33%;
+			}
+			.col-md-5 {
+			width: 41.66%;
+			}
+			.col-md-6 {
+			width: 50%;
+			}
+			.col-md-7 {
+			width: 58.3%;
+			}
+			.col-md-8 {
+			width: 66.66%;
+			}
+			.col-md-9 {
+			width: 74.99%;
+			}
+			.col-md-10 {
+			width: 83.33%;
+			}
+			.col-md-11 {
+			width: 91.66%;
+			}
+			.col-md-12 {
+			width: 100%;
+			}
+		}
+	</style>
+</head>
+<body>
+	<h1>Solution Module 2</h1>
+
+	<h2>The Electricity Revolution</h2>
+
+	<div class="row">
+		<div class="col-lg-3 col-md-6"><div class="pgh"><p>Hello, my name is André Leone and I am a graduate student in electrical engineering at the Federal University of Paraná. Located in the south of Brazil. I would like to talk to you about electricity replacing the oil  as a primary source of energy. I like to call it the <span>electricity revolution.</span></p></div></div>
+		<div class="col-lg-3 col-md-6"><div class="pgh">To illustrate the electricity revolution, I would like to highlight two points: 
+			<ul>
+				<li> The increase in electricity consumption</li>
+				<li> How it impacts ours cities.</li>
+			</ul> </div></div>
+		<div class="col-lg-3 col-md-6"><div class="pgh"><p><span>The increase in electricity consumption: </span></p><p> it's simple !!!!, it increases because electrical equipment are increasing, how example we have the electrical devices in our homes and also the new cars using electricity, the electric vehicles.</p></div></div>
+		<div class="col-lg-3 col-md-6"><div class="pgh"><p><span>How it Impacts ours cities: </span> </P><p>If we consider replacing oil by electricity, the first change will be in the environment, with cleaner air and less pollutants. And the second change will be in the landscape of your cities through generation of electric energy using the sun, the wind and the waters.</p></div></div>
+		<div class="col-lg-3 col-md-6"><div class="pgh">Item 5</div></div>
+		<div class="col-lg-3 col-md-6"><div class="pgh">Item 6</div></div>
+		<div class="col-lg-3 col-md-6"><div class="pgh">Item 7</div></div>
+		<div class="col-lg-3 col-md-6"><div class="pgh">Item 8</div></div>
+	</div>
+
+</body>
+</html>
+<!--conectar ao internet explorer-->
+<!-- browser-sync start --server --directory --files "*" --> 
+<!-- git status, após modificar, git add .,
+	git commit -m "nome do arquivo", git push",
+	para adicionar o caminho, git checkout gh-pages-->
