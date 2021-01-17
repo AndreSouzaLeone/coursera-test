@@ -2,7 +2,7 @@
 body {
 	font-size: 16px;
 	color: #f7c800;
-	background-color: #f1eddd;
+	background-color: #2334d0;
 	font-family: 'Oxygen', sans-serif;
 }
 
@@ -23,7 +23,6 @@ body {
 
 .naofunc {
 	float: left;
-
 }
 
 
@@ -31,6 +30,7 @@ body {
 	text-decoration: none;
 	vertical-align: middle;
 	position:relative;
+	width: 300px;
 	
 }
 
@@ -68,8 +68,230 @@ body {
 	vertical-align: middle;
 	}
 
+#icon1 {
+	width: 35px;
+	height: 25px;
+	margin-left: 1px;
+}
+
+#icon2 {
+	width: 35px;
+	height: 25px;
+	margin-left: 1px;
+}
+
+#icon3 {
+	width: 35px;
+	height: 25px;
+	margin-left: 5px;
+}
+
+#textic {
+	color: #f1eddd;
+}
+
+#nav-list a {
+	margin-top: 0px;
+	clear: both;
+	text-align: center;
+}
+
+#nav-list a:hover {
+	background-color: #d02323;
+	color: #d02323;
+}
+
+#main-content{
+	background-color: #2334d0;
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+
+/** nada daqui funciona**/
+.navbar-header button.navbar-toggle, .navbar-header .icon-bar {
+	border: 1px solid #f1eddd;
+}
+
+.navbar-header button.navbar-toggle {
+	clear: both;
+	margin-top: -30px;
+}
+	
+
+
+/* END HEADER */
+
+/*homepage*/
+	#crono-tile, #and-tile, #map-tile {
+		height: 250px;
+		width: 100%;
+		margin-bottom: 15px;
+		margin-top: 15px;
+		position: relative;
+		border: 2px solid #3F0C1F;
+		overflow: hidden;
+	}
+
+	#crono-tile:hover, #and-tile:hover, #map-tile:hover {
+		box-shadow: 0 1px 5px 1px #CCCCCC;
+	}
+
+	#crono-tile {
+		background: url('../images/crono.png') no-repeat;
+		background-position: center;
+	}
+	#and-tile {
+		background: url('../images/and.png') no-repeat;
+		background-position: center;
+	}
+
+	#map-tile {
+		background: url('../images/map.png') no-repeat;
+		background-position: center;
+	}
+
+	#crono-tile span, #and-tile span, #map-tile span {
+		position: absolute;
+		bottom: 0;
+		right: 0;
+		width: 100%;
+		text-align: center;
+		font-size: 1.6em;
+		text-transform: uppercase;
+		background-color: #000;
+		color: #fff;
+		opacity: .8;
+			}
+
+	/* end home page*/
+	/* footer */
+	.panel-footer {
+		margin-top: 30px;
+		padding-top: 35px;
+		padding-bottom: 30px;
+		background-color: #d02323;
+		border-top: 0;
+	}
+
+	.panel-footer div.row {
+		margin-bottom: 35px;
+	}
+
+	#hours, #adress {
+		line-height: 2;
+	}
+
+	#hours {
+		color: #f1eddd;
+	}
+	/* ende footer */
 
 
 
+/********* Large devices only */
+@media (min-width: 1200px) {
+	.container .jumbotron {
+		background: url('../images/jumbotron_1200.jpg') no-repeat;
+		height: 675px;
+		box-shadow: 0 0 50px #3F0C1F;
+		border: 2px solid #3F0C1F;
+	}
+}
 
-		
+/********* medium devices only */
+@media (min-width: 992px) and (max-width: 1199px) {
+/*Header */
+	#logo-img {
+	background: url('../images/LOGOsemnome1md.png') no-repeat;
+	width: 100px;
+	height: 100px;
+	margin: 5px 5px 5px 0;
+	}
+/* end header*/
+
+/* home page*/
+	.container .jumbotron {
+		background: url('../images/jumbotron_992.jpg') no-repeat;
+		height: 558px;
+		box-shadow: 0 0 50px #3F0C1F;
+		border: 2px solid #3F0C1F;
+	}
+
+}
+
+/********* small devices only */
+@media (min-width: 768px) and (max-width: 991px) {
+/*Header */
+	#logo-img {
+	background: url('../images/LOGOsemnome1md.png') no-repeat;
+	width: 100px;
+	height: 100px;
+	margin: 5px 5px 5px 0;
+	}
+
+	#icon1, #icon2, #icon3 {
+		margin-right: 5px;
+	}
+
+/*end header*/
+
+/* homepage */
+
+	.container .jumbotron {
+		background: url('../images/jumbotron_768.jpg') no-repeat;
+		height: 432px;
+		box-shadow: 0 0 50px #3F0C1F;
+		border: 2px solid #3F0C1F;
+	}
+
+
+}
+
+/********* extra small devices only */
+@media (max-width: 767px) {
+	/* HEader */
+	.navbar-brand {
+		padding-top: 10px;
+		height: 80px;
+	}
+	.navbar-brand h1 {
+		padding-top: 10px;
+		font-size:5vw; /* 1vw = 1% of viewport width */
+	}
+	.navbar-brand p {
+		font-size: .6em;
+		margin-top: 12px;
+	}
+
+	#icon1, #icon2, #icon3 {
+		margin-right: 5px;
+	}
+
+	/*end header*/
+
+	.container .jumbotron {
+		margin-top: 30px;
+		padding: 0;
+		box-shadow: 0 0 50px #3F0C1F;
+		border: 2px solid #3F0C1F;
+	}
+
+	#crono-tile, #and-tile, #map-tile {
+		width: 360px;
+		margin: 0 auto 15px;
+		margin-top: 15px
+	}	
+}
+
+/********* extra small devices only */
+@media (max-width: 479px) {
+	/* header */
+
+
+	/* home page */
+	#crono-tile, #and-tile, #map-tile {
+		width: 280px;
+		margin: 0 auto 15px;
+		margin-top: 10px;
+	}
+
